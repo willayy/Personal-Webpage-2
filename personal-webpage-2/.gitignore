@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Personal pictures and api keys
+# UNCOMMENT WHEN DEPLOYING: william-norland-cv-picture.jpg
