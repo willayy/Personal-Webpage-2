@@ -16,6 +16,11 @@
   }
 }
 
+a {
+  width: auto;
+  height: auto;
+}
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;

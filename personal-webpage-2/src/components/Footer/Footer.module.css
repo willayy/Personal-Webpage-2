@@ -1,0 +1,19 @@
+
+.footerHstack {
+  display: flex;          /* Enables flexbox */
+  justify-content: flex-end; /* Aligns items to the right */
+  position: absolute;     /* Position the container absolutely */
+  right: 0;               /* Aligns the container to the right */
+  align-items: center;    /* Aligns items vertically */
+  width: 100%;            /* Full width */
+  gap: 40px;              /* Spacing between items */
+  background-color: #2d2d35;
+  padding: 20px;          /* Padding around the container */
+}
+
+.copyright {
+  color: white;           /* Text color */
+  justify-self: flex-start; /* Aligns the item to the left */
+  left: 0;
+}
+
