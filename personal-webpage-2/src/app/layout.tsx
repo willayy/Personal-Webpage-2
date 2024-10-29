@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "./error";
-import { Footer } from "@/components/Footer/Footer";
-import { Header } from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 
 export const metadata: Metadata = {
 

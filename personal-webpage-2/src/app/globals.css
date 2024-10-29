@@ -1,24 +1,28 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/*invincible*/
+::-webkit-scrollbar {
+  display: none;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.error-div {
+  text-align: center;
+  padding-top: 10%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+body {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  width: auto;
-  height: auto;
+img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .roboto-thin {

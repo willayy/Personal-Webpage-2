@@ -1,0 +1,11 @@
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dfdede;
+    box-shadow: 1px 1px 1px #000000;
+    text-align: left;
+}

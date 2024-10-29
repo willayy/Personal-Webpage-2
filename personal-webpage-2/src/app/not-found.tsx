@@ -4,13 +4,13 @@ export default function NotFound() {
 
   return (
 
-    <div>
+    <div className='error-div roboto-regular'>
 
       <h2>Not Found</h2>
 
       <p>Could not find requested resource</p>
 
-      <Link href="/">Return Home</Link>
+      <Link href="/">Return to About</Link>
 
     </div>
 

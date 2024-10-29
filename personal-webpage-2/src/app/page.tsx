@@ -1,15 +1,15 @@
-import { Footer } from "@/components/Footer/Footer"
-import { Header } from "@/components/Header/Header";
-
+import styles from './page.module.css';
 
 export default function Home() {
   return (
 
     <main>
 
-      <div>
+      <div className={ styles.aboutTextbox + " roboto-regular"}>
 
-      <p> Nothing here yet </p>
+        <h1> William Norland </h1>
+
+        <p> Curious engineering student at Chalmers institute of technology with a great interest for programming, computer science, data science and artificial intelligence. </p>
 
       </div>
 

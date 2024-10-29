@@ -1,34 +1,36 @@
-export function Header() {
+import styles from './Header.module.css';
+
+export default function Header() {
 
     return (
 
-        <header>
+        <header className={styles.header}>
 
-            <nav>
+            <nav className={styles.nav}>
 
-                <ul>
+                <ul className={styles.headerUl + " roboto-bold"}>
 
-                    <li>
+                    <li className={styles.listItem}>
 
-                        <a href="about">About</a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="projects">Projects</a>
+                        <a href="/" className={styles.link}>About</a>
 
                     </li>
 
-                    <li>
+                    <li className={styles.listItem}>
 
-                        <a href="my career">My career</a>
+                        <a href="projects" className={styles.link}>Projects</a>
 
                     </li>
 
-                    <li>
+                    <li className={styles.listItem}>
 
-                        <a href="conact & socials">Contact & Socials</a>
+                        <a href="mycareer" className={styles.link}>My career</a>
+
+                    </li>
+
+                    <li className={styles.listItem}>
+
+                        <a href="contact" className={styles.link}>Contact</a>
 
                     </li>
 

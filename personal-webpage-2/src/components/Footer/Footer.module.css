@@ -1,19 +1,41 @@
 
-.footerHstack {
+.footer {
   display: flex;          /* Enables flexbox */
-  justify-content: flex-end; /* Aligns items to the right */
-  position: absolute;     /* Position the container absolutely */
-  right: 0;               /* Aligns the container to the right */
+  position: fixed;
+  bottom: 0;
   align-items: center;    /* Aligns items vertically */
   width: 100%;            /* Full width */
-  gap: 40px;              /* Spacing between items */
   background-color: #2d2d35;
   padding: 20px;          /* Padding around the container */
+  height: 10vh;
 }
 
-.copyright {
+.linkedInLogo {
+  transition: all 0.5s;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  animation: all 0.5s;
+}
+
+.img {
+  animation: all 0.5s;
+}
+
+.socialsBox {
+  display: flex;          /* Enables flexbox */
+  align-items: center;
+  justify-content: right; /* Centers items horizontally */
+  padding-right: 40px;
+  width: 100%;
+  gap: 40px;
+}
+
+.copyrightBox {
+  display: flex;          /* Enables flexbox */
   color: white;           /* Text color */
-  justify-self: flex-start; /* Aligns the item to the left */
-  left: 0;
+  justify-content: left; /* Centers items horizontally */
+  width: 100%;
 }
 
