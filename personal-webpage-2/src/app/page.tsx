@@ -9,7 +9,11 @@ export default function Home() {
 
         <h1> William Norland </h1>
 
-        <p> Curious engineering student at Chalmers institute of technology with a great interest for programming, computer science, data science and artificial intelligence. </p>
+        <p> Curious software engineering student at Chalmers institute of technology with a great interest for programming, computer science, data science and artificial intelligence. </p>
+
+        <h2> Skills </h2>
+
+        <p> Java, Python, JS/HTML/CSS, PostgreSQL, Swift/SwiftUI, Next.js, mathematical modelling, statistics, data science </p>
 
       </div>
 
