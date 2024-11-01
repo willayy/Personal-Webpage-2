@@ -36,4 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Personal pictures and api keys
-# UNCOMMENT WHEN DEPLOYING: william-norland-cv-picture.jpg
+.env.developement
+
+# MacOS
+.DS_Store
