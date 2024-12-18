@@ -1,51 +1,54 @@
 import styles from './page.module.css';
 import ProjectListItem from '@/components/ProjectListItem/ProjectListItem';
 import ProjectList from '@/components/ProjectList/ProjectList';
+import { fetchMyRepos } from '@/api/github-api'
 
-export default function Projects() {
 
-    return (
-  
-      <main>
 
-        <div className={ styles.projectsBox + " roboto-regular"}>
+export default async function Projects() {
 
-          <h1> Projects </h1>
-  
-          <p> Here is a list of projects i have been working on </p>
+  const repos = await fetchMyRepos()
 
-          <ProjectList>
-          
-            <ProjectListItem 
-              title="Project 1"
-              about="This is a project" 
-              link="https://github.com"
-            />
+  return (
 
-            <ProjectListItem 
-              title="Project 2"
-              about="This is a project" 
-              link="https://github.com"
-            />
+    <main>
 
-            <ProjectListItem 
-              title="Project 3"
-              about="This is a project" 
-              link="https://github.com"
-            />
+      <div className={ styles.projectsBox + " roboto-regular"}>
 
-            <ProjectListItem
-              title="Project 4"
-              about="This is a project" 
-              link="https://github.com"
-            />
+        <h1> Projects </h1>
 
-          </ProjectList>
+        <p> Here is a list of projects i have been working on, for a full view of my GitHub please visit </p>
 
-        </div>
-  
-      </main>
-  
-    );
-  
-  }
+        <a href={process.env.GITHUB_USER_LINK} target="_blank" rel="noopener noreferrer">My GitHub</a>
+
+        <ProjectList>
+
+          {
+
+            repos.map((repo) => (
+
+                <ProjectListItem
+                  title={repo.name}
+                  description={repo.description}
+                  link={process.env.GITHUB_USER_LINK + repo.name}
+                  topics={repo.topics}
+                  created={repo.created_at}
+                  lastUpdated={repo.updated_at}
+                  key={repo.id}
+                />
+
+              )
+
+            )
+
+          }
+
+        </ProjectList>
+
+      </div>
+
+    </main>
+
+  );
+
+}
