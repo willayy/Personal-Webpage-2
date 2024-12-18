@@ -36,7 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Personal pictures and api keys
-.env.development
+.env.local
 
 # MacOS
 .DS_Store
