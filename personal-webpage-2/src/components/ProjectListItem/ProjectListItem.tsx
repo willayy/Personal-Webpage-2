@@ -1,5 +1,7 @@
 import styles from './ProjectListItem.module.css';
 import { formatDate } from '@/utils/dates';
+import '@/app/globals.css'
+
 
 // Define the props interface
 interface ProjectListItemProps {
@@ -11,11 +13,13 @@ interface ProjectListItemProps {
     lastUpdated: string;
 }
 
+const listItem = 'listItem'
+
 export default function ProjectListItem({title, description, link, topics, created, lastUpdated }: ProjectListItemProps,key: number) {
 
     return (
 
-        <li key={key} className={styles.listItem}>
+        <li key={key} className={listItem}>
 
             <h2>{title}</h2>
 
