@@ -1,19 +1,18 @@
-import styles from './page.module.css';
 import ProjectListItem from '@/components/ProjectListItem/ProjectListItem';
-import ProjectList from '@/components/ProjectList/ProjectList';
-import { fetchMyRepos } from '@/api/github-api'
+import List from '@/components/List/List';
+import { fetchMyRepos, Repo } from '@/api/github-api'
 
-
+const listBox = 'listBox'
 
 export default async function Projects() {
 
-  const repos = await fetchMyRepos()
+  const data: [Repo] = await fetchMyRepos()
 
   return (
 
     <main>
 
-      <div className={ styles.projectsBox + " roboto-regular"}>
+      <div className={ listBox + " roboto-regular"}>
 
         <h1> Projects </h1>
 
@@ -21,11 +20,11 @@ export default async function Projects() {
 
         <a href={process.env.GITHUB_USER_LINK} target="_blank" rel="noopener noreferrer">My GitHub</a>
 
-        <ProjectList>
+        <List>
 
           {
 
-            repos.map((repo) => (
+            data.map((repo) => (
 
                 <ProjectListItem
                   title={repo.name}
@@ -43,7 +42,7 @@ export default async function Projects() {
 
           }
 
-        </ProjectList>
+        </List>
 
       </div>
 
