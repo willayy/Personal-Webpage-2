@@ -1,0 +1,34 @@
+[
+    {
+        "id": 4,
+        "position": "Teaching assistant",
+        "organization": "Chalmers",
+        "startDate": "October 2024",
+        "endDate": "March 2025",
+        "description": "Worked as a teaching assistant in a course on object oriented programming projects. And on object oriented programming."
+    },
+    {
+        "id": 3,
+        "position": "App-development (iOS)",
+        "organization": "Self-employed",
+        "startDate": "June 2024",
+        "endDate": "August 2024",
+        "description": "Developed and launched an iOS app on TestFlight for beta-testing during the summer of 2024 together with a friend. The app is named ProgressX and is built with the language Swift utilizing the SwiftUI Framework and is a niche fitness app."
+    },
+    {
+        "id": 2,
+        "position": "Client services manager",
+        "organization": "SEB",
+        "startDate": "June 2023",
+        "endDate": "August 2024",
+        "description": "Worked primarily with letters of credit and collections. I also developed a tool in Python to digitize a large backlog with paper documents, which also could extract key numbers from them and export them to Excel. The tool used Tesseract (an OCR software) and a simple GUI built with TKinter."
+    },
+    {   
+        "id": 1,
+        "position": "Soldier",
+        "organization": "4th Amphibious regiment, Swedish armed forces",
+        "startDate": "August 2020",
+        "endDate": "July 2022",
+        "description": "Worked as an anti-ship soldier in the “bekämpningskompaniet” unit and also as a sonar operator in an anti-submarine group, first as a conscript but also as an employed soldier for a year after the conscription ended. During my time at Amf4, I was also responsible for the platoon's physical training."
+    }
+]
