@@ -8,11 +8,12 @@ interface EmploymentListItemProps {
     startDate: string;
     endDate: string;
     description: string;
+    key: number;
 }
 
 const listItem = 'listItem'
 
-export default function ProjectListItem({position, organization, startDate, endDate, description }: EmploymentListItemProps, key: number) {
+export default function ProjectListItem({position, organization, startDate, endDate, description, key }: Readonly<EmploymentListItemProps>) {
 
     return (
 

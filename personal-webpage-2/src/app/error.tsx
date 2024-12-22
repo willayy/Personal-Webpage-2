@@ -2,13 +2,13 @@
  
 import { useEffect } from 'react'
  
-export default function Error({
+export default function Error({ // NOSONAR - This is the way its defined in the Next.js documentation
   error,
   reset,
-}: {
+}: Readonly<{
   error: Error & { digest?: string }
   reset: () => void
-}) {
+}>) {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error)

@@ -11,11 +11,12 @@ interface ProjectListItemProps {
     topics: string[];
     created: string;
     lastUpdated: string;
+    key: number;
 }
 
 const listItem = 'listItem'
 
-export default function ProjectListItem({title, description, link, topics, created, lastUpdated }: ProjectListItemProps,key: number) {
+export default function ProjectListItem({title, description, link, topics, created, lastUpdated, key }: Readonly<ProjectListItemProps>) {
 
     return (
 

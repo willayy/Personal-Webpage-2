@@ -6,7 +6,7 @@ interface ListProperties {
 
 }
 
-export default function List({ children }: ListProperties) {
+export default function List({ children }: Readonly<ListProperties>) {
     
     return (
 

@@ -1,7 +1,6 @@
 import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListItem';
 import { Employment } from '@/utils/employment';
 import List from '@/components/List/List';
-import { useEffect, useState } from 'react';
 
 const listBox = 'listBox'
 
