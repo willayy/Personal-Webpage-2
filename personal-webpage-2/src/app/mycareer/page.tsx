@@ -1,12 +1,12 @@
 import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListItem';
-import { Employment } from '@/utils/employment';
+import { Employment } from '@/utils/employmentType';
 import List from '@/components/List/List';
 
 const listBox = 'listBox'
 
 export default async function Projects() {
 
-    const data: [Employment] = await fetch('resources/employments.json')
+    const data: [Employment] = await fetch('/resources/employments.json')
     .then((res) => res.json())
     .then((json) => JSON.parse(JSON.stringify(json)))
 
