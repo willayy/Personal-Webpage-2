@@ -1,9 +1,25 @@
 # Personal-Webpage-2
 Small personal webpage built using the Next.js framework, configured to use app-router and TypeScript.
 
+### Usage
+To run in development mode use
+```shell
+npm run dev
+```
+For deployment first run
+```shell
+npm run predeployment
+```
+then run
+```shell
+npm run deployment
+```
+You might need to include a sudo before these commands!
+
 ### Enviroment variables
 To run the web app you need to supply an
-`.env.*` filed with the variables.
+`.env.*` file with the variables. Optionally you can
+supply one for `production`and another one for `development`.
 
 ```
 NEXT_PUBLIC_GITHUB_IMAGE_URL
