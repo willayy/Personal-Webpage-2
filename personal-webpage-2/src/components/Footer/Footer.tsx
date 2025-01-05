@@ -8,6 +8,8 @@ export default function Footer() {
 
     return (
 
+        <div className={styles.footerContainer}>
+
         <footer className={styles.footer}>
 
             <div className={styles.copyrightBox}>
@@ -33,6 +35,8 @@ export default function Footer() {
             </div>
             
         </footer>
+
+        </div>
 
     );
 
