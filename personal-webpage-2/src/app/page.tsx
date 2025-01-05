@@ -9,7 +9,7 @@ export default function Home() {
 
         <h1> William Norland </h1>
 
-        <p> Curious software engineering student at Chalmers institute of technology with a great interest for programming, computer science, data science and artificial intelligence. </p>
+        <p> Curious software engineering student at Chalmers institute of technology with a great interest in programming, computer science, data science and artificial intelligence. </p>
 
         <h2> Skills </h2>
 
