@@ -6,3 +6,10 @@ export type Employment = {
     description: string,
     id: number
 }
+
+export type Education = {
+    school: string,
+    degree: string,
+    graduation: string,
+    id: number
+}
