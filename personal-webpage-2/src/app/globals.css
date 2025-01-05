@@ -104,16 +104,18 @@ img {
   padding: 20px;
   border-radius: 10px;
   background-color: #dfdede;
-  box-shadow: 1px 1px 1px #000000;
+  box-shadow: 0.5px 0.5px 0.5px #a0a0a0;
   text-align: left;
 }
 
 .listBox {
-  margin: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 20px;
   border-radius: 10px;
   background-color: #f0f0f0;
-  box-shadow: 1px 1px 1px #000000;
-  margin-bottom: 200px;
+  box-shadow: 0.5px 0.5px 0.5px #a0a0a0;
+  margin-bottom: 10px;
   text-align: center;
 }
