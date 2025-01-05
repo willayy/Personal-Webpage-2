@@ -2,6 +2,8 @@ import styles from './Header.module.css';
 
 export default function Header() {
 
+    const homePage = process.env.HOME_PAGE
+
     return (
 
         <header className={styles.header}>
@@ -12,7 +14,7 @@ export default function Header() {
 
                     <li className={styles.listItem}>
 
-                        <a href="/" className={styles.link}>About</a>
+                        <a href={homePage} className={styles.link}>About</a>
 
                     </li>
 
