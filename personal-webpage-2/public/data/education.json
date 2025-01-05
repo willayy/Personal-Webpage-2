@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "school": "Polhemsgymnasiet (High School)",
+        "degree": "High School Diploma in Science",
+        "graduation": "June 2020"
+    },
+    {
+        "id": 2,
+        "school": "Chalmers University of Technology",
+        "degree": "B.Sc. in Software Engineering",
+        "graduation": "June 2025"
+    },
+    {
+        "id": 3,
+        "school": "Chalmers University of Technology",
+        "degree": "M.Sc. in (Dont know yet)",
+        "graduation": "June 2027"
+    }
+]
