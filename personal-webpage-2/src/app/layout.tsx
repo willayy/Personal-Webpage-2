@@ -33,14 +33,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         <title> William Norland </title>
 
         {/* The description of the website, this is just custom flavor applied by the owner of the site. */}
-        <meta name="description" content="Personal webpage for William Norland" />
-
-        {/* A copied in link from the google fonts website. Using this we can acces their fonts without downloading them. */}
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"></link>
+        <meta name="description" content="Personal webpage for William Norland" />        
 
       </head>
 

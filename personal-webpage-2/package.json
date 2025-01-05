@@ -1,12 +1,15 @@
 {
   "name": "personal-webpage-2",
+  "homepage": "https://willayy.github.io/Personal-Webpage-2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "^14.2.20",
@@ -21,6 +24,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
+    "gh-pages": "^6.3.0",
     "typescript": "^5"
   }
 }
