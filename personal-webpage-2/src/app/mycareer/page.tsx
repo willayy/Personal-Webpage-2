@@ -32,7 +32,7 @@ export default async function Projects() {
 
                 <List> {
 
-                    educationData.map((education) => (
+                    educationData?.map((education) => (
 
                         <EducationListItem
                             school={education.school}
@@ -53,7 +53,7 @@ export default async function Projects() {
 
                 <List> {
 
-                    employmentData.map((employment) => (
+                    employmentData?.map((employment) => (
 
                         <EmploymentListItem
                             position={employment.position}

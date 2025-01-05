@@ -24,7 +24,7 @@ export default async function Projects() {
 
           {
 
-            data.map((repo) => (
+            data?.map((repo) => (
 
                 <ProjectListItem
                   title={repo.name}
