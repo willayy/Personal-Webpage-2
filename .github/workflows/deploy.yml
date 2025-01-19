@@ -1,0 +1,20 @@
+name: Deployment Workflow # Automatic deployment workflow
+
+on:
+  push:
+    branches:
+      - main  # Run on pushes to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install dependencies
+        run: npm install
+
+      - name: Pre-deployment
+        run: npm run predeployment
+
+      - name: Deploy
+        run: npm run deploy
