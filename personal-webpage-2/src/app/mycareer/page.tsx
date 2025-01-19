@@ -1,5 +1,5 @@
 import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListItem';
-import { Employment, Education } from '@/utils/careerTypes';
+import { Employment, Education } from '@/utils/types';
 import List from '@/components/List/List';
 import EducationListItem from '@/components/EducationListItem/EducationListItem';
 import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';

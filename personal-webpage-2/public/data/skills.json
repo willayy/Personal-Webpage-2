@@ -1,11 +1,11 @@
 [
-    "Java",
-    "Python",
-    "JS/HTML/CSS",
-    "PostgreSQL",
-    "Swift/SwiftUI",
-    "Next.js",
-    "mathematical modelling",
-    "statistics",
-    "data science"
+    {"skill": "Java"},
+    {"skill": "Python"},
+    {"skill": "JS/HTML/CSS"},
+    {"skill": "PostgreSQL"},
+    {"skill": "Swift/SwiftUI"},
+    {"skill": "Next.js"},
+    {"skill": "mathematical modelling"},
+    {"skill": "statistics"},
+    {"skill": "data science"}
 ]

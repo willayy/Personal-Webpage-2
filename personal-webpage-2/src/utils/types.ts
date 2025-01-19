@@ -13,3 +13,7 @@ export type Education = {
     graduation: string,
     id: number
 }
+
+export type Skill = {
+    skill: string
+}

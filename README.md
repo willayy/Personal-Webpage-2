@@ -8,11 +8,11 @@ npm run dev
 ```
 For deployment first run
 ```shell
-npm run predeployment
+npm run predeploy
 ```
 then run
 ```shell
-npm run deployment
+npm run deploy
 ```
 You might need to include a sudo before these commands!
 
@@ -27,6 +27,7 @@ NEXT_PUBLIC_LINEKDIN_IMAGE_URL
 GITHUB_USER_LINK
 GITHUB_USERNAME
 PUBLIC_SITE_URL
+HOME_PAGE
 ```
 
 # Next.js boilerplate documentation

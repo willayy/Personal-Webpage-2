@@ -1,3 +1,4 @@
+import { Skill } from '@/utils/types';
 import styles from './page.module.css';
 import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
 
@@ -7,7 +8,7 @@ export default async function Home() {
 
   const topicList = 'topicList'
 
-  const skillsData: [string] = await fetchAndParse(baseUrl + '/data/skills.json')
+  const skillsData: [Skill] = await fetchAndParse(baseUrl + '/data/skills.json')
 
   return (
 
@@ -22,8 +23,8 @@ export default async function Home() {
         <h2> Skills </h2>
 
         <ul className={topicList}>
-          {skillsData.map((skill) => (
-            <li key={skill} className={topicStyle}>{skill}</li>
+          {skillsData?.map((skillPoint) => (
+            <li key={skillPoint.skill} className={topicStyle}>{skillPoint.skill}</li>
           ))}
         </ul>
 
