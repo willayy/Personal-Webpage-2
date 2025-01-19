@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.ACCESS_TOKEN_GH }}
 
       - name: Cached dependencies
         uses: actions/cache@v4
@@ -35,9 +33,6 @@ jobs:
         # Deploy runs all preceeding commands, like build, lint, test etc
         run: |
           echo "ACCESS_TOKEN_GH=${{ secrets.ACCESS_TOKEN_GH }}" >> .env.local
-          git config --global user.email "williamnorland@gmail.com"
-          git config --global user.name "William Norland"
+          git config credential.helper sourcetree
           npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GH }}
         working-directory: personal-webpage-2
