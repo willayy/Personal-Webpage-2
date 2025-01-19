@@ -7,6 +7,7 @@ const nextConfig = {
     unoptimized: true, // Disable default image optimization
   },
   assetPrefix: isProd ? './' : '',
-  basePath: isProd ? '/Personal-Webpage-2' : ''
+  basePath: isProd ? '/nextjs-github-pages' : '',
+  output: "export",
 };
 export default nextConfig;
