@@ -21,6 +21,9 @@ jobs:
         run: npm run predeploy
         working-directory: personal-webpage-2
 
+      - name: Git credentials
+        run: git config --global user.name "CICD Runner"
+
       - name: Deploy
         run: npm run deploy
         working-directory: personal-webpage-2
