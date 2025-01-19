@@ -18,7 +18,10 @@ jobs:
         working-directory: personal-webpage-2
 
       - name: Pre-deployment
-        run: npm run predeploy
+        
+        run: |
+          echo "ACCESS_TOKEN_GH=${{ secrets.ACCESS_TOKEN_GH }}" >> .env.local
+          npm run predeploy
         working-directory: personal-webpage-2
 
       - name: Deploy
