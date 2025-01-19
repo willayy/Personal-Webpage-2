@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN_GH }}
     
       - name: Install dependencies
         run: npm install
