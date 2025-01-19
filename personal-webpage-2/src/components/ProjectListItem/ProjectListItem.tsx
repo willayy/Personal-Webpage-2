@@ -1,4 +1,3 @@
-import styles from './ProjectListItem.module.css';
 import { formatDate } from '@/utils/dates';
 import '@/app/globals.css'
 
