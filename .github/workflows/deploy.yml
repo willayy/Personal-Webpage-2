@@ -18,7 +18,7 @@ jobs:
         working-directory: personal-webpage-2
 
       - name: Pre-deployment
-        run: npm run predeployment
+        run: npm run predeploy
         working-directory: personal-webpage-2
 
       - name: Deploy
