@@ -12,6 +12,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" >> ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Test SSH connection
+        run: ssh -T git@github.com
+
       - name: Cached dependencies
         uses: actions/cache@v4
         with:
@@ -33,6 +43,5 @@ jobs:
         # Deploy runs all preceeding commands, like build, lint, test etc
         run: |
           echo "ACCESS_TOKEN_GH=${{ secrets.ACCESS_TOKEN_GH }}" >> .env.local
-          git config credential.helper sourcetree
           npm run deploy
         working-directory: personal-webpage-2
