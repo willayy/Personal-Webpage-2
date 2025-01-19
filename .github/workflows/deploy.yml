@@ -27,4 +27,4 @@ jobs:
           git config --global user.name "William Norland"
           npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GH }}
