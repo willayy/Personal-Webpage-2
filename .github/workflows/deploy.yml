@@ -21,9 +21,10 @@ jobs:
         run: npm run predeploy
         working-directory: personal-webpage-2
 
-      - name: Git credentials
-        run: git config --global user.name "CICD Runner"
-
       - name: Deploy
-        run: npm run deploy
-        working-directory: personal-webpage-2
+        run: |
+          git config --global user.email "williamnorland@gmail.com"
+          git config --global user.name "William Norland"
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
