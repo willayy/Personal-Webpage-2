@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main  # Run on pushes to the main branch
-
-
-
+      
 jobs:
   deploy:
     runs-on: macos-latest      
@@ -20,10 +18,15 @@ jobs:
         run: npm install
         working-directory: personal-webpage-2
 
-      - name: Pre-deployment
+      - name: Deploy
+        # Deploy runs all preceeding commands, like build, lint, test etc
         run: |
           echo "ACCESS_TOKEN_GH=${{ secrets.ACCESS_TOKEN_GH }}" >> .env.local
-          npm run predeploy
+          git config --global user.email "williamnorland@gmail.com"
+          git config --global user.name "William Norland"
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GH }}
         working-directory: personal-webpage-2
 
       - name: Cache dependencies
@@ -38,12 +41,3 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
-      - name: Deploy
-        run: |
-          git config --global user.email "williamnorland@gmail.com"
-          git config --global user.name "William Norland"
-          npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GH }}
-        working-directory: personal-webpage-2
