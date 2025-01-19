@@ -1,11 +1,19 @@
 import styles from './page.module.css';
+import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
 
-export default function Home() {
+export default async function Home() {
+
+  const topicStyle = 'topic'
+
+  const topicList = 'topicList'
+
+  const skillsData: [string] = await fetchAndParse(baseUrl + '/data/skills.json')
+
   return (
 
     <main>
 
-      <div className={ styles.aboutTextbox + " roboto-regular"}>
+      <div className={styles.aboutTextbox + " roboto-regular"}>
 
         <h1> William Norland </h1>
 
@@ -13,7 +21,11 @@ export default function Home() {
 
         <h2> Skills </h2>
 
-        <p> Java, Python, JS/HTML/CSS, PostgreSQL, Swift/SwiftUI, Next.js, mathematical modelling, statistics, data science </p>
+        <ul className={topicList}>
+          {skillsData.map((skill) => (
+            <li key={skill} className={topicStyle}>{skill}</li>
+          ))}
+        </ul>
 
       </div>
 

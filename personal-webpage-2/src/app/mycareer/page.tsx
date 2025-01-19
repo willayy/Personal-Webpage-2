@@ -2,21 +2,11 @@ import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListIt
 import { Employment, Education } from '@/utils/careerTypes';
 import List from '@/components/List/List';
 import EducationListItem from '@/components/EducationListItem/EducationListItem';
+import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
 
 const listBox = 'listBox'
 
 export default async function Projects() {
-
-    const baseUrl = process.env.PUBLIC_SITE_URL
-
-    const fetchAndParse = async (url: string) => {
-        return await fetch(url).then(res => {
-                if (res.ok) {
-                    return res.json()
-                }
-            }
-        )
-    }
 
     const employmentData: [Employment] = await fetchAndParse(baseUrl + '/data/employments.json')
 

@@ -25,6 +25,8 @@ img {
   max-height: 100px;
 }
 
+
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -118,4 +120,18 @@ img {
   box-shadow: 0.5px 0.5px 0.5px #a0a0a0;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.topic {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fdfdfd;
 }

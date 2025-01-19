@@ -15,6 +15,10 @@ interface ProjectListItemProps {
 
 const listItem = 'listItem'
 
+const topicList = 'topicList'
+
+const topicStyle = 'topic'
+
 export default function ProjectListItem({title, description, link, topics, created, lastUpdated}: Readonly<ProjectListItemProps>, key: Readonly<number>) {
 
     return (
@@ -33,9 +37,9 @@ export default function ProjectListItem({title, description, link, topics, creat
 
             <p><strong>Topics:</strong></p>
 
-            <ul className={styles.topicList}>
+            <ul className={topicList}>
                 {topics.map((topic) => (
-                    <li key={topic} className={styles.topic}>{topic}</li>
+                    <li key={topic} className={topicStyle}>{topic}</li>
                 ))}
             </ul>
         
