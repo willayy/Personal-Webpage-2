@@ -1,14 +1,8 @@
+// @ts-check
+ 
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    unoptimized: true, // Disable default image optimization
-  },
-  assetPrefix: isProd ? './' : '',
-  basePath: isProd ? '/Personal-Webpage-2' : '',
-  output: 'export'
-};
-
-export default nextConfig;
+  /* config options here */
+}
+ 
+module.exports = nextConfig
