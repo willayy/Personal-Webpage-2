@@ -10,6 +10,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+    
       - name: Install dependencies
         run: npm install
         working-directory: personal-webpage-2
