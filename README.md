@@ -1,20 +1,13 @@
 # Personal-Webpage-2
 Small personal webpage built using the Next.js framework, configured to use app-router and TypeScript.
+This web app is configure to be deployed as static pages on github pages.
 
 ### Usage
 To run in development mode use
 ```shell
 npm run dev
 ```
-For deployment first run
-```shell
-npm run predeploy
-```
-then run
-```shell
-npm run deploy
-```
-You might need to include a sudo before these commands!
+For deployment just push to the main branch and the github action will take care of the rest.
 
 ### Enviroment variables
 To run the web app you need to supply an
