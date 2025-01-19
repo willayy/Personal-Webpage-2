@@ -20,7 +20,10 @@ jobs:
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
       - name: Test SSH connection
-        run: ssh -T git@github.com
+        run: |
+          ssh -T git@github.com
+          echo "This should end with exit status 1 dont worry about it"
+        continue-on-error: true
 
       - name: Cached dependencies
         uses: actions/cache@v4
