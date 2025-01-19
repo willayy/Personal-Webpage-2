@@ -5,7 +5,7 @@ export async function fetchMyRepos(): Promise<[Repo]> {
 
   const octokit = new Octokit({
 
-    auth: process.env.GITHUB_ACCESS_TOKEN
+    auth: process.env.ACCESS_TOKEN_GH
 
   })
 
