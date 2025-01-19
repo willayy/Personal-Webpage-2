@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Install dependencies
         run: npm install
+        working-directory: personal-webpage-2
 
       - name: Pre-deployment
         run: npm run predeployment
