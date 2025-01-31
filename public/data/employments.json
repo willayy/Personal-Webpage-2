@@ -1,5 +1,13 @@
 [
     {
+        "id": 5,
+        "position": "Machine learning engineer",
+        "startDate": "January 2025",
+        "endDate": "current",
+        "organization": "Weon",
+        "description": "Working with development of computer vision models, System and integration and Image generation"
+    },
+    {
         "id": 4,
         "position": "Teaching assistant",
         "organization": "Chalmers",
