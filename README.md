@@ -23,6 +23,9 @@ PUBLIC_SITE_URL
 HOME_PAGE
 ```
 
+### Deployment
+The web app is deployed using github pages. The deployment is using github actions to build the web app and push the build to pages. If version is not updated in package.json the deployment will used cached build files and therefore it will not be updated correctly.
+
 # Next.js boilerplate documentation
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
