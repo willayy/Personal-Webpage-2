@@ -24,7 +24,12 @@ HOME_PAGE
 ```
 
 ### Deployment
-The web app is deployed using github pages. The deployment is using github actions to build the web app and push the build to pages. If version is not updated in package.json the deployment will used cached build files and therefore it will not be updated correctly.
+The web app is deployed using github pages. The deployment is using github actions to build the web app and push the build to pages. 
+
+The site automatically rebuilds and redeploys:
+- When changes are pushed to the `main` branch
+- Daily at 3 AM UTC (to pick up new projects from GitHub automatically)
+- Manually via the Actions tab (workflow_dispatch)
 
 # Next.js boilerplate documentation
 
