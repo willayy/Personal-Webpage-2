@@ -12,8 +12,8 @@
 
 .listItem:hover {
   color: whitesmoke;
-  font-size: 1.25em; /*Increase font size*/
-  /*Make transition to ahigher font size smooth*/
+  transform: scale(1.25); /*Scale the item without affecting layout*/
+  /*Make transition smooth*/
   transition: all 0.5s;
 }
 
