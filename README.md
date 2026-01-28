@@ -24,7 +24,7 @@ HOME_PAGE
 ```
 
 ### Deployment
-The web app is deployed using github pages. The deployment is using github actions to build the web app and push the build to pages. 
+The web app is deployed using GitHub Pages. The deployment is using GitHub Actions to build the web app and push the build to pages. 
 
 The site automatically rebuilds and redeploys:
 - When changes are pushed to the `main` branch
