@@ -2,6 +2,8 @@
 Small personal webpage built using the Next.js framework, configured to use app-router and TypeScript.
 This web app is configure to be deployed as static pages on github pages.
 
+**Note:** This website is semi vibe-coded using GitHub Copilot.
+
 ### Usage
 To run in development mode use
 ```shell

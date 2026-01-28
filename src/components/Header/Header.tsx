@@ -26,7 +26,13 @@ export default function Header() {
 
                     <li className={styles.listItem}>
 
-                        <a href="mycareer" className={styles.link}>My career</a>
+                        <a href="education" className={styles.link}>Education</a>
+
+                    </li>
+
+                    <li className={styles.listItem}>
+
+                        <a href="mycareer" className={styles.link}>Career</a>
 
                     </li>
 
