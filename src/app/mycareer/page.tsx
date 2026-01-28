@@ -7,7 +7,7 @@ const listBox = 'listBox'
 
 export default async function Career() {
 
-    const employmentData: [Employment] = await fetchAndParse(baseUrl + '/data/employments.json')
+    const employmentData: Employment[] = await fetchAndParse(baseUrl + '/data/employments.json')
 
     return (
 

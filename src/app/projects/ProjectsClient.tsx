@@ -10,7 +10,7 @@ import styles from './ProjectsClient.module.css';
 const listBox = 'listBox';
 
 interface ProjectsClientProps {
-  data: [Repo];
+  data: Repo[];
   githubUserLink: string;
 }
 
@@ -49,7 +49,7 @@ export default function ProjectsClient({ data, githubUserLink }: ProjectsClientP
         <h1> Projects </h1>
 
         <p>
-          Here is a list of projects i have been working on, for a full view of my GitHub please visit{' '}
+          Here is a list of projects I have been working on, for a full view of my GitHub please visit{' '}
         </p>
 
         <a href={githubUserLink} target="_blank" rel="noopener noreferrer">
@@ -67,33 +67,37 @@ export default function ProjectsClient({ data, githubUserLink }: ProjectsClientP
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={styles.searchInput}
+              aria-label="Search projects by name, description, or topic"
             />
           </div>
 
           {/* School Projects Filter */}
-          <div className={styles.filterContainer}>
-            <label className={styles.filterLabel}>School Projects:</label>
+          <fieldset className={styles.filterContainer}>
+            <legend className={styles.filterLabel}>School Projects:</legend>
             <div className={styles.filterButtons}>
               <button
                 className={`${styles.filterButton} ${showSchoolProjects === 'all' ? styles.active : ''}`}
                 onClick={() => setShowSchoolProjects('all')}
+                aria-pressed={showSchoolProjects === 'all'}
               >
                 All
               </button>
               <button
                 className={`${styles.filterButton} ${showSchoolProjects === 'yes' ? styles.active : ''}`}
                 onClick={() => setShowSchoolProjects('yes')}
+                aria-pressed={showSchoolProjects === 'yes'}
               >
                 <FaGraduationCap className={styles.buttonIcon} /> School
               </button>
               <button
                 className={`${styles.filterButton} ${showSchoolProjects === 'no' ? styles.active : ''}`}
                 onClick={() => setShowSchoolProjects('no')}
+                aria-pressed={showSchoolProjects === 'no'}
               >
                 <FaBriefcase className={styles.buttonIcon} /> Personal
               </button>
             </div>
-          </div>
+          </fieldset>
         </div>
 
         {/* Results Count */}

@@ -19,6 +19,7 @@ export const fetchAndParse = async (url: string) => {
                 if (res.ok) {
                     return res.json()
                 }
+                throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`)
             })
         }
     }
@@ -28,6 +29,7 @@ export const fetchAndParse = async (url: string) => {
             if (res.ok) {
                 return res.json()
             }
+            throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`)
         }
     )
 }

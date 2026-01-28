@@ -7,7 +7,7 @@ const listBox = 'listBox'
 
 export default async function EducationPage() {
 
-    const educationData: [Education] = await fetchAndParse(baseUrl + '/data/education.json')
+    const educationData: Education[] = await fetchAndParse(baseUrl + '/data/education.json')
 
     return (
 
