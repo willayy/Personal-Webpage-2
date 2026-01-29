@@ -1,8 +1,7 @@
 
 .footer {
   display: flex;          /* Enables flexbox */
-  position: fixed;
-  bottom: 0;
+  position: relative;
   align-items: center;    /* Aligns items vertically */
   width: 100%;            /* Full width */
   background-color: #2d2d35;
@@ -11,7 +10,7 @@
 }
 
 .footerContainer {
-  margin-top: 200px;
+  margin-top: 40px;
 }
 
 .img:hover {
