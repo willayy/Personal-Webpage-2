@@ -1,45 +1,21 @@
 import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListItem';
-import { Employment, Education } from '@/utils/types';
+import { Employment } from '@/utils/types';
 import List from '@/components/List/List';
-import EducationListItem from '@/components/EducationListItem/EducationListItem';
 import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
 
 const listBox = 'listBox'
 
-export default async function Projects() {
+export default async function Career() {
 
-    const employmentData: [Employment] = await fetchAndParse(baseUrl + '/data/employments.json')
-
-    const educationData: [Education] = await fetchAndParse(baseUrl + '/data/education.json')
+    const employmentData: Employment[] = await fetchAndParse(baseUrl + '/data/employments.json')
 
     return (
 
         <main>
-            
-            <div className={ listBox + " roboto-regular"}>
-
-                <h1> Education </h1>
-
-                <List> {
-
-                    educationData?.map((education) => (
-
-                        <EducationListItem
-                            school={education.school}
-                            degree={education.degree}
-                            graduation={education.graduation}
-                            key={education.id}
-                        />
-
-                    ))
-
-                } </List>
-
-            </div>
 
             <div className={ listBox + " roboto-regular"}>
 
-                <h1> Employments </h1>
+                <h1> Career </h1>
 
                 <List> {
 

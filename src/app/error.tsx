@@ -7,7 +7,7 @@ export default function Error({ // NOSONAR - This is the way its defined in the 
   reset,
 }: Readonly<{
   error: Error & { digest?: string }
-  reset: () => void
+  reset?: () => void
 }>) {
   useEffect(() => {
     // Log the error to an error reporting service
@@ -24,7 +24,7 @@ export default function Error({ // NOSONAR - This is the way its defined in the 
         onClick={
 
           // Attempt to recover by trying to re-render the segment
-          () => reset()
+          () => reset?.()
 
         }
       >

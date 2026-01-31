@@ -18,6 +18,10 @@
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -104,10 +108,19 @@ img {
   flex-direction: column;
   margin: 5px;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #dfdede;
-  box-shadow: 0.5px 0.5px 0.5px #a0a0a0;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 
+              0 1px 3px rgba(0, 0, 0, 0.06);
   text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.listItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 
+              0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .listBox {
@@ -115,11 +128,13 @@ img {
   margin-right: 20px;
   margin-left: 20px;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-  box-shadow: 0.5px 0.5px 0.5px #a0a0a0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 
+              0 1px 3px rgba(0, 0, 0, 0.06);
   margin-bottom: 10px;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .topicList {
@@ -131,7 +146,17 @@ img {
 
 .topic {
   margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #fdfdfd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.topic:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(102, 126, 234, 0.4);
 }

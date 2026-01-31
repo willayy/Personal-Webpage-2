@@ -54,6 +54,8 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
 
           </ErrorBoundary>
 
+        <div style={{ flexGrow: 1 }} />
+
         {/* This is a footer component i made that wraps around all child routes. */}
         <Footer/>
 

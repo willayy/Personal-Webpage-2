@@ -15,7 +15,8 @@
     "octokit": "^4.0.2",
     "personal-webpage-2": "file:",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",

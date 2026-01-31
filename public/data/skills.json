@@ -1,11 +1,38 @@
 [
-    {"skill": "Java"},
-    {"skill": "Python"},
-    {"skill": "JS/HTML/CSS"},
-    {"skill": "PostgreSQL"},
-    {"skill": "Swift/SwiftUI"},
-    {"skill": "Next.js"},
-    {"skill": "mathematical modelling"},
-    {"skill": "statistics"},
-    {"skill": "data science"}
+    {
+        "skill": "Mathematical modelling"
+    },
+    {
+        "skill": "Statistics & Probability"
+    },
+    {
+        "skill": "Optimization"
+    },
+    {
+        "skill": "Data Science"
+    },
+    {
+        "skill": "Machine Learning"
+    },
+    {
+        "skill": "C/C++"
+    },
+    {
+        "skill": "Java"
+    },
+    {
+        "skill": "Python"
+    },
+    {
+        "skill": "JS/HTML/CSS"
+    },
+    {
+        "skill": "PostgreSQL"
+    },
+    {
+        "skill": "Swift/SwiftUI"
+    },
+    {
+        "skill": "Next.js"
+    }
 ]
