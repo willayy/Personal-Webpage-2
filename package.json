@@ -11,7 +11,7 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
-    "next": "^15.1.5",
+    "next": "^16.1.6",
     "octokit": "^4.0.2",
     "personal-webpage-2": "file:",
     "react": "^18",
