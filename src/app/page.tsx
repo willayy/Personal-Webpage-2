@@ -25,13 +25,13 @@ export default async function Home() {
         <h2> Skills </h2>
 
         <p> {skillSummaryText} </p>
-        
+
         <ul className={topicList}>
           {primarySkills?.map((skill) => (
             <li key={skill} className={topicStyle}>{skill}</li>
           ))}
         </ul>
-        
+
         <h3> Secondary Skills </h3>
 
         <ul className={topicList}>

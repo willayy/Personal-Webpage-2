@@ -20,7 +20,7 @@ export default function Error({ // NOSONAR - This is the way its defined in the 
 
       <h2>Something went wrong!</h2>
 
-      <button
+      <button className="error-button roboto-regular"
         onClick={
 
           // Attempt to recover by trying to re-render the segment

@@ -1,4 +1,11 @@
+"use client";
+
+import "./globals.css";
+
 export default function Loading() {
-    // Or a custom loading skeleton component
-    return <p>Loading...</p>
+    return (
+        <div className="loading-container roboto-regular">
+            <div className="loading-spinner roboto-regular"></div>
+        </div>
+    );
 }
