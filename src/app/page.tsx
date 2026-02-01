@@ -1,6 +1,6 @@
 import { Skill } from '@/utils/types';
 import styles from './page.module.css';
-import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
+import skillsDataRaw from '@/data/skills.json';
 
 export default async function Home() {
 
@@ -8,7 +8,7 @@ export default async function Home() {
 
   const topicList = 'topicList'
 
-  const skillsData: [Skill] = await fetchAndParse(baseUrl + '/data/skills.json')
+  const skillsData = skillsDataRaw as Skill[];
 
   return (
 

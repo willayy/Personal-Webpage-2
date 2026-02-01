@@ -21,7 +21,7 @@ export async function fetchMyRepos(): Promise<[Repo]> {
 
   })
 
-  return JSON.parse(JSON.stringify(response.data))
+  return structuredClone(response.data)
 
 }
 
