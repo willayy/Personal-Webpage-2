@@ -156,6 +156,24 @@ img {
   transition: transform 0.2s ease;
 }
 
+.secondary-topic {
+  margin: 2.5px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  box-shadow: 0 2px 4px rgba(253, 160, 133, 0.3);
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 520;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.secondary-topic:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(253, 160, 133, 0.4);
+}
+
 .topic:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 6px rgba(102, 126, 234, 0.4);

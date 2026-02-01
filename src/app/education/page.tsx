@@ -1,13 +1,12 @@
 import List from '@/components/List/List';
 import EducationListItem from '@/components/EducationListItem/EducationListItem';
 import educationDataRaw from '@/data/education.json';
-import { Education } from '@/utils/types';
 
 const listBox = 'listBox'
 
 export default async function EducationPage() {
 
-    const educationData = educationDataRaw as Education[];
+    const educationData = educationDataRaw;
 
     return (
 

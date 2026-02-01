@@ -1,42 +1,36 @@
-[
-    {
-        "id": 5,
-        "position": "Machine learning engineer",
-        "organization": "Weon",
-        "startDate": "January 2025",
-        "endDate": "Current",
-        "description": "Working with development of computer vision models, System and integration and Image generation"
-    },
-    {
-        "id": 4,
-        "position": "Teaching assistant",
-        "organization": "Chalmers",
-        "startDate": "October 2024",
-        "endDate": "March 2025",
-        "description": "Worked as a teaching assistant in a course on object oriented programming projects. And on object oriented programming."
-    },
-    {
-        "id": 3,
-        "position": "App-development (iOS)",
-        "organization": "Self-employed",
-        "startDate": "June 2024",
-        "endDate": "August 2024",
-        "description": "Developed and launched an iOS app on TestFlight for beta-testing during the summer of 2024 together with a friend. The app is named ProgressX and is built with the language Swift utilizing the SwiftUI Framework and is a niche fitness app."
-    },
-    {
-        "id": 2,
-        "position": "Client services manager",
-        "organization": "SEB",
-        "startDate": "June 2023",
-        "endDate": "August 2024",
-        "description": "Worked primarily with letters of credit and collections. I also developed a tool in Python to digitize a large backlog with paper documents, which also could extract key numbers from them and export them to Excel. The tool used Tesseract (an OCR software) and a simple GUI built with TKinter."
-    },
-    {   
-        "id": 1,
-        "position": "Soldier",
-        "organization": "4th Amphibious regiment, Swedish armed forces",
-        "startDate": "August 2020",
-        "endDate": "July 2022",
-        "description": "Worked as an anti-ship soldier in the “bekämpningskompaniet” unit and also as a sonar operator in an anti-submarine group, first as a conscript but also as an employed soldier for a year after the conscription ended. During my time at Amf4, I was also responsible for the platoon's physical training."
-    }
-]
+{
+    "employments": [
+        {
+            "id": 4,
+            "position": "Machine learning engineer",
+            "organization": "Weon",
+            "startDate": "January 2025",
+            "endDate": "Current",
+            "description": "Primarily working as a part-time Machine learning engineer in combination with my studies at CTH but have been in contact with many technical aspects of Weon such as:\n- Size recommendation algorithms.\n- 3D measurement systems.\n- Data collection.\n- Generative Image models.\n- Frontend web design.\n- Backend logic and Databases.\n- API servers."
+        },
+        {
+            "id": 3,
+            "position": "Teaching assistant",
+            "organization": "Chalmers",
+            "startDate": "October 2024",
+            "endDate": "March 2025",
+            "description": "Teaching assistant in two courses (TDA553, TDA367) about Object Oriented Programming (OOP), one teaching the basics of OOP using Java, and one where students formed groups to produce a Java project over the span of half a semester."
+        },
+        {
+            "id": 2,
+            "position": "Client services manager",
+            "organization": "SEB",
+            "startDate": "June 2023",
+            "endDate": "August 2024",
+            "description": "Worked primarily with letters of credit and collections. I also developed a tool in Python to digitize a large backlog with paper documents, which also could extract key numbers from them and export them to Excel. The tool used Tesseract (an OCR software) and a simple GUI built with TKinter."
+        },
+        {
+            "id": 1,
+            "position": "Soldier",
+            "organization": "4th Amphibious regiment, Swedish armed forces",
+            "startDate": "August 2020",
+            "endDate": "July 2022",
+            "description": "Worked as an anti-ship soldier in the “bekämpningskompaniet” unit and also as a sonar operator in an anti-submarine group, first as a conscript but also as an employed soldier for a year after the conscription ended. During my time at Amf4, I was also responsible for the platoon's physical training."
+        }
+    ]
+}

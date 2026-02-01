@@ -1,13 +1,12 @@
 import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListItem';
 import List from '@/components/List/List';
 import employmentDataRaw from '@/data/employments.json';
-import { Employment } from '@/utils/types';
 
 const listBox = 'listBox'
 
 export default async function Career() {
 
-    const employmentData = employmentDataRaw as Employment[];
+    const employmentData: any[] = employmentDataRaw.employments;
 
     return (
 

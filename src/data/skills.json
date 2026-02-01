@@ -1,38 +1,34 @@
-[
-    {
-        "skill": "Mathematical modelling"
-    },
-    {
-        "skill": "Statistics & Probability"
-    },
-    {
-        "skill": "Optimization"
-    },
-    {
-        "skill": "Data Science"
-    },
-    {
-        "skill": "Machine Learning"
-    },
-    {
-        "skill": "C/C++"
-    },
-    {
-        "skill": "Java"
-    },
-    {
-        "skill": "Python"
-    },
-    {
-        "skill": "JS/HTML/CSS"
-    },
-    {
-        "skill": "PostgreSQL"
-    },
-    {
-        "skill": "Swift/SwiftUI"
-    },
-    {
-        "skill": "Next.js"
-    }
-]
+{
+    "introduction": "I am a curious person passionate about technology, solving applied problems, and im always eager to learn new things no matter the field",
+    "skillSummary": "With a bachelors degree in Software Engineering and a masters degree in Data Science & AI, i posses a strong foundation in both software and the mathematical principles that forms the basis of the Data science field. I also posses a wide arrange of secondary skill in adjacent areas. from working with a variety of tools and technologies. Mostly from personal projects i did for fun and learning, but also from internships and course projects.",
+    "primarySkills": [
+        "Software Development",
+        "AI Development",
+        "Data Science",
+        "Machine Learning"
+    ],
+    "secondarySkills": [
+        "Web Development",
+        "Mobile Development",
+        "Database Management",
+        "Mathematical Statistics",
+        "Mathematical Modelling",
+        "Mathematical Optimization",
+        "Python",
+        "C/C++",
+        "Java",
+        "JavaScript/HTML/CSS",
+        "Next.js",
+        "Swift/SwiftUI",
+        "PostgreSQL",
+        "Git",
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Pandas",
+        "NumPy",
+        "MacOS",
+        "Linux (Ubuntu)",
+        "Windows"
+    ]
+}
