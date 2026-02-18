@@ -5,7 +5,7 @@ export default function Footer() {
 
     const githubUrl = process.env.NEXT_PUBLIC_GITHUB_IMAGE_URL ?? "N/A"
 
-    const linkedinUrl = process.env.NEXT_PUBLIC_LINEKDIN_IMAGE_URL ?? "N/A"
+    const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_IMAGE_URL ?? "N/A"
 
     return (
 

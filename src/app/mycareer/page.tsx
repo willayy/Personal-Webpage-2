@@ -4,9 +4,18 @@ import employmentDataRaw from '@/data/employments.json';
 
 const listBox = 'listBox'
 
+type Employment = {
+    id: number;
+    position: string;
+    organization: string;
+    startDate: string;
+    endDate: string;
+    description: string;
+};
+
 export default async function Career() {
 
-    const employmentData: any[] = employmentDataRaw.employments;
+    const employmentData: Employment[] = employmentDataRaw.employments;
 
     return (
 
