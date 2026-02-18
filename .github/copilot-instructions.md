@@ -68,7 +68,7 @@ Required environment variables (defined in `.env.development` and `.env.producti
 
 ```
 NEXT_PUBLIC_GITHUB_IMAGE_URL     # URL for GitHub icon
-NEXT_PUBLIC_LINEKDIN_IMAGE_URL   # URL for LinkedIn icon (note: typo is intentional)
+NEXT_PUBLIC_LINKEDIN_IMAGE_URL   # URL for LinkedIn icon
 GITHUB_USER_LINK                 # GitHub profile link
 GITHUB_USERNAME                  # GitHub username
 PUBLIC_SITE_URL                  # Public URL of the site
@@ -161,7 +161,6 @@ export default function Component() {
 
 ## Known Quirks
 
-- LinkedIn environment variable has a typo: `NEXT_PUBLIC_LINEKDIN_IMAGE_URL` (missing 'e')
 - Base path configuration differs between dev and production
 - Site automatically rebuilds daily to update with new GitHub projects
 - The website is "semi vibe-coded" - meaning it was built with significant Copilot assistance
