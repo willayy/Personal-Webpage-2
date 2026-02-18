@@ -18,8 +18,15 @@
 .error-div {
   text-align: center;
   padding-top: 10%;
-  height: 400px;
+  min-height: 400px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .error-div {
+    min-height: 300px;
+    padding-top: 15%;
+  }
 }
 
 body {
