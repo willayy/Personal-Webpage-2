@@ -1,13 +1,12 @@
-import { Education } from '@/utils/types';
 import List from '@/components/List/List';
 import EducationListItem from '@/components/EducationListItem/EducationListItem';
-import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
+import educationDataRaw from '@/data/education.json';
 
 const listBox = 'listBox'
 
 export default async function EducationPage() {
 
-    const educationData: Education[] = await fetchAndParse(baseUrl + '/data/education.json')
+    const educationData = educationDataRaw;
 
     return (
 

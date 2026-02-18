@@ -1,13 +1,21 @@
 import EmploymentListItem from '@/components/EmploymentListItem/EmploymentListItem';
-import { Employment } from '@/utils/types';
 import List from '@/components/List/List';
-import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
+import employmentDataRaw from '@/data/employments.json';
 
 const listBox = 'listBox'
 
+type Employment = {
+    id: number;
+    position: string;
+    organization: string;
+    startDate: string;
+    endDate: string;
+    description: string;
+};
+
 export default async function Career() {
 
-    const employmentData: Employment[] = await fetchAndParse(baseUrl + '/data/employments.json')
+    const employmentData: Employment[] = employmentDataRaw.employments;
 
     return (
 

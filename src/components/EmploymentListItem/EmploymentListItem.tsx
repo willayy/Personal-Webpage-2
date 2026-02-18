@@ -22,7 +22,7 @@ export default function ProjectListItem({position, organization, startDate, endD
 
             <p className={styles.organization}> {organization} </p>
 
-            <p>{description}</p>
+            <text className={styles.text}>{description}</text>
 
             <p><strong>From-To:</strong> {startDate} - {endDate} </p>
 

@@ -1,14 +1,16 @@
-import { Skill } from '@/utils/types';
 import styles from './page.module.css';
-import { baseUrl, fetchAndParse } from '@/utils/fetchAndParse';
+import skillsDataRaw from '@/data/skills.json';
 
 export default async function Home() {
 
   const topicStyle = 'topic'
-
+  const secondaryTopicStyle = 'secondary-topic'
   const topicList = 'topicList'
 
-  const skillsData: [Skill] = await fetchAndParse(baseUrl + '/data/skills.json')
+  const introductionText: string = skillsDataRaw.introduction
+  const skillSummaryText: string = skillsDataRaw.skillSummary
+  const primarySkills: string[] = skillsDataRaw.primarySkills
+  const secondarySkills: string[] = skillsDataRaw.secondarySkills
 
   return (
 
@@ -18,13 +20,23 @@ export default async function Home() {
 
         <h1> William Norland </h1>
 
-        <p> Curious software engineering student at Chalmers institute of technology with a great interest in programming, computer science, data science and artificial intelligence. </p>
+        <p> {introductionText} </p>
 
         <h2> Skills </h2>
 
+        <p> {skillSummaryText} </p>
+
         <ul className={topicList}>
-          {skillsData?.map((skillPoint) => (
-            <li key={skillPoint.skill} className={topicStyle}>{skillPoint.skill}</li>
+          {primarySkills?.map((skill) => (
+            <li key={skill} className={topicStyle}>{skill}</li>
+          ))}
+        </ul>
+
+        <h3> Secondary Skills </h3>
+
+        <ul className={topicList}>
+          {secondarySkills?.map((skill) => (
+            <li key={skill} className={secondaryTopicStyle}>{skill}</li>
           ))}
         </ul>
 
