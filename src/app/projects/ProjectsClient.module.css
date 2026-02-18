@@ -6,7 +6,7 @@
   padding: 20px;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
 }
 
 .searchContainer {
@@ -17,7 +17,7 @@
 }
 
 .searchIcon {
-  color: #667eea;
+  color: var(--color-primary);
   font-size: 1.2rem;
   flex-shrink: 0;
 }
@@ -25,17 +25,17 @@
 .searchInput {
   flex: 1;
   padding: 12px 16px;
-  border: 2px solid #e8ecf1;
+  border: 2px solid var(--color-bg-light-alt);
   border-radius: 8px;
   font-size: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
   transition: all 0.3s ease;
   background: white;
 }
 
 .searchInput:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -51,7 +51,7 @@
 
 .filterLabel {
   font-weight: 600;
-  color: #2d2d35;
+  color: var(--color-dark);
   font-size: 1rem;
 }
 
@@ -67,27 +67,27 @@
   align-items: center;
   gap: 6px;
   padding: 10px 20px;
-  border: 2px solid #e8ecf1;
+  border: 2px solid var(--color-bg-light-alt);
   border-radius: 8px;
   background: white;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
   font-size: 0.95rem;
   font-weight: 500;
-  color: #2d2d35;
+  color: var(--color-dark);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .filterButton:hover {
-  border-color: #667eea;
+  border-color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
 }
 
 .filterButton.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: white;
-  border-color: #667eea;
+  border-color: var(--color-primary);
   box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
 }
 
