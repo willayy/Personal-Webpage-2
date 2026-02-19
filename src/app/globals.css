@@ -108,6 +108,22 @@ img {
   box-shadow: 0 4px 6px rgba(102, 126, 234, 0.4);
 }
 
+.secondary-topic {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(247, 151, 30, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.secondary-topic:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(247, 151, 30, 0.4);
+}
+
 @media (max-width: 768px) {
   .listBox {
     margin: 10px 15px;
@@ -120,6 +136,11 @@ img {
   }
 
   .topic {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .secondary-topic {
     font-size: 0.8rem;
     padding: 6px 10px;
   }
@@ -136,6 +157,11 @@ img {
   }
 
   .topic {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+
+  .secondary-topic {
     font-size: 0.75rem;
     padding: 5px 8px;
   }
